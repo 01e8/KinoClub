@@ -5,6 +5,47 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Roboto Slab';
+    src: local('fonts/Roboto Slab Light'), local('fonts/RobotoSlab-Light'), url('fonts/robotoslablight.woff2') format('woff2'), url('fonts/robotoslablight.woff') format('woff'), url('fonts/robotoslablight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Slab';
+    src: local('fonts/Roboto Slab Regular'), local('fonts/RobotoSlab-Regular'), url('fonts/robotoslabregular.woff2') format('woff2'), url('fonts/robotoslabregular.woff') format('woff'), url('fonts/robotoslabregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('fonts/Roboto Thin'), local('fonts/Roboto-Thin'), url('fonts/robotothin.woff2') format('woff2'), url('fonts/robotothin.woff') format('woff'), url('fonts/robotothin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('fonts/Roboto Light'), local('fonts/Roboto-Light'), url('fonts/robotolight.woff2') format('woff2'), url('fonts/robotolight.woff') format('woff'), url('fonts/robotolight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('fonts/Roboto'), local('fonts/Roboto-Regular'), url('fonts/roboto.woff2') format('woff2'), url('fonts/roboto.woff') format('woff'), url('fonts/roboto.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('fonts/Roboto Medium'), local('fonts/Roboto-Medium'), url('fonts/robotomedium.woff2') format('woff2'), url('fonts/robotomedium.woff') format('woff'), url('fonts/robotomedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
 html {
     width: 100%;
     height: 100%;
@@ -17,34 +58,38 @@ body {
     width: 100%;
     padding: 0px;
     margin: 0px;
-    background-color: #1c1c1c;
+    background-color: #d1d1d1;
 }
 
 a {
-    color: #000000; /* Цвет ссылок */
+    color: #171717;/* Цвет ссылок */
     text-decoration: none;
 }
 a:visited {
-    color: #000000; /* Цвет посещенных ссылок */
+    color: #171717; /* Цвет посещенных ссылок */
 }
 a:active {
-    color: #000000; /* Цвет активных ссылок */
+    color: #171717; /* Цвет активных ссылок */
 }
 
 li {
-    width: 226px;
-    font-size: 30pt;
+    width: auto;
     list-style-type: none;
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 0px;
-    margin-left: 30px;
-    margin-right: 30px;
-    height: 45px;
+    margin-left: 25px;
+    margin-right: 25px;
     float: left;
+}
+
+.menubutton {
+    width: 228px;
+    font-size: 30pt;
+    height: 45px;
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.4);
-    color: rgba(255, 255, 255, 0.92);
+    color: #e5e5e5;
     text-transform: uppercase;
     background-color: rgba(0, 0, 0, 0);
     -o-transition: all 0.1s ease-in-out;
@@ -53,12 +98,12 @@ li {
     transition: all 0.1s ease-in-out;
 }
 
-li:hover {
+.menubutton:hover {
     background-color: rgba(0, 0, 0, 0.39);
     border: 1px solid rgba(255, 167, 0, 0.4);
 }
 
-.navul {
+.menu {
     padding: 0;
     height: 50px;
     width: 1400px;
@@ -111,7 +156,7 @@ li:hover {
 #logovideo {
     position: absolute;
     height: 500px;
-    opacity: 0.4;
+    opacity: 0.5;
     right: 0;
     left: 0;
     margin: auto;
@@ -125,34 +170,32 @@ li:hover {
     height: 500px; 
 }
 
-.article {
+.masonry_box {
     width: 330px;
-    height: auto;
     float: left;
-    background-color: #383838;
+    background-color: white;
     overflow: hidden;
     margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-bottom: 0px;
     padding-bottom: 0px;
     font-family: "Calibri", "Century Gothic", "Trebuchet MS", "Helvetica", sans-serif;
     font-size: 20pt;
-    -o-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -webkit-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
+
 }
 
 .article_title {
-    padding: 5px;
+    padding: 0px;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 10px;
     margin: 0;
-    font-family: "Calibri", "Century Gothic", "Trebuchet MS", "Helvetica", sans-serif;
-    font-size: 18pt;
-    font-weight: 100;
-    color: #c3c3c3;
+    margin-top: -2px;
+    font-family: "Roboto Slab", "Calibri", "Century Gothic", "Trebuchet MS", "Helvetica", sans-serif;
+    font-size: 15pt;
+    font-weight: 400;
+    color: #000000;
 }
 
 #main {
@@ -161,8 +204,9 @@ li:hover {
     width: 100%;
 }
 
-.miniature {
+img.wp-post-image {
     width: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
 }
@@ -177,14 +221,14 @@ footer {
     margin: 0;
     padding: 0;
     padding-left: 10px;
-    font-family: "Calibri", "Century Gothic", "Trebuchet MS", "Helvetica", sans-serif;
-    text-transform: uppercase;
-    font-size: 13pt;
-    font-weight: 100;
+    padding-bottom: 8px;
+    font-family: "Roboto", "Calibri", "Century Gothic", "Trebuchet MS", "Helvetica", sans-serif;
+    font-size: 11pt;
+    font-weight: 300;
     width: 230px;
     float: left;
     overflow: hidden;
-    color: #8d8d8d;
+    color: #484848;
 }
 
 .date {
@@ -192,16 +236,16 @@ footer {
     width: 80px;
     text-align: right;
     padding-right: 10px;
-    font-family:"Calibri", "Century Gothic", "Trebuchet MS", "Helvetica", sans-serif;
+    font-family: "Roboto", "Calibri", "Century Gothic", "Trebuchet MS", "Helvetica", sans-serif;
     text-transform: uppercase;
-    font-size: 13pt;
-    font-weight: 100;
-    color: #8d8d8d;
+    font-size: 11pt;
+    font-weight: 300;
+    color: #484848;
 }
 
 #down {
     width: 100%;
-    background-color: #383838;
+    background-color: #121212;
     color: #e3e3e3;
     font-family: "Kazmann Sans" ,"Calibri", "Century Gothic", "Trebuchet MS", "Helvetica", sans-serif;
     height: 170px;
@@ -211,8 +255,8 @@ footer {
     overflow: hidden;
 }
 
-#content {
-    width: 1400px;
+#content_masonry {
+    width: 1360px;
     margin: auto;
     padding: 0;
     overflow: hidden;
@@ -227,19 +271,10 @@ footer {
 }
 
 .divimg {
-    margin-top: 6px;
     height: auto;
     padding: 0;
-    margin-bottom: -7px;
+    margin-top: -7px;
     overflow: hidden;
-}
-
-.buttomfirst {
-    margin-left: 10px;
-}
-
-.buttomlast {
-    margin-right: 10px;
 }
 
 .navnavfooter {
@@ -267,7 +302,7 @@ footer {
 
 @media screen and (max-width: 1415px) {
 
-.navul {
+.menu {
     padding: 0;
     height: 50px;
     width: 100%;
@@ -275,35 +310,28 @@ footer {
 }
     
 li {
-    width: 16%;
-    font-size: 30pt;
+    width: 15.8%;
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 0px;
     margin-left: 2%;
     margin-right: 2%;
-    height: 45px;
-}
-    
-.buttomfirst {
-    margin-left: 1.5%;
 }
 
-.buttomlast {
-    margin-right: 0%;
+.menubutton {
+    width: 100%;
 }
     
-#content {
+#content_masonry {
     width: 100%;
     margin: auto;
     padding: 0;
     overflow: hidden;
 }
     
-.article {
-    width: 31.24%;
-    height: auto;
-    margin-left: 1.5%;
+.masonry_box {
+    width: 30.4%;
+    margin-left: 2%;
     margin-right: 0%;
     margin-bottom: 0px;
     font-size: 20pt;
@@ -328,15 +356,19 @@ li {
 }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1005px) {
     
-.article {
-    width: 47.8%;
-    height: auto;
-    margin-left: 1.5%;
+.masonry_box {
+    width: 46%;
+    margin-left: 2%;
     margin-right: 0%;
     margin-bottom: 0px;
     font-size: 20pt;
+}
+    
+li {
+    width: 15.7%;
+
 }
     
 }
@@ -347,9 +379,8 @@ li {
     display: none;
 }   
 
-.article {
+.masonry_box {
     width: 96.7%;
-    height: auto;
     margin-left: 1.5%;
     margin-right: 0px;
     font-size: 20pt;
@@ -358,7 +389,7 @@ li {
 .divimg {
     margin-top: 6px;
     height: auto;
-    margin-bottom: -7px;
+    margin-top: -7px;
 }
   
 #hat {
@@ -388,7 +419,7 @@ li {
     margin-top: 90px;
 }
     
-.navul {
+.menu {
     padding: 0;
     height: 310px;
     width: 100%;
@@ -404,20 +435,7 @@ li {
     padding-top: 5px;
     margin-left: 25%;
     margin-right: 25%;
-    height: 45px;
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    color: rgba(255, 255, 255, 0.92);
-    text-transform: uppercase;
     margin-top: 10px;
-}
-    
-.buttomfirst {
-    margin-left: 25%;
-}
-    
-.buttomlast {
-    margin-right: 25%;
 }
     
 #videologo {
@@ -434,6 +452,18 @@ li {
     
 #down {
     height: 60px;
+}
+    
+.article_title {
+    font-weight: 400;
+}
+    
+.tags{
+    font-weight: 300;
+}
+    
+.date{
+    font-weight: 300;
 }
     
 }
